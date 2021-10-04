@@ -8,6 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   text-decoration: none;
+  background-color: #f8f8f8;
+  min-height: 100%;
 }
 
 code {
@@ -16,6 +18,7 @@ code {
 }
 
 .App {
+  height: 100vh;
   margin-top: 100px;
 }
 
@@ -24,8 +27,17 @@ footer {
   /* align-items: center; */
   /* justify-content: center; */
   /* bottom: 5px; */
+
   position: relative;
-  bottom: 5%;
+  /* display: flex; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(50, 50, 50, 1);
+  color: #f8f8f8;
+  padding: 15px 0;
+  text-align: center;
 }
 
 a {
@@ -57,7 +69,7 @@ a {
   /* background-color: blue;
   opacity: 0.5; */
   /* 윗 속성을 쓰면, 글자도 투명도가 적용되므로 주의 */
-  background-color: rgba(50, 50, 50, 0.7);
+  background-color: rgba(10, 10, 10, 0.8);
 }
 
 .navBar.active {
@@ -72,6 +84,18 @@ a {
   transform: translateY(-100%);
 }
 
+.myLogo {
+  color: #f8f8f8;
+  font-size: 30px;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+.myLogo:hover {
+  color: turquoise;
+}
+.myLogo span {
+  padding: 0px 20px;
+}
 .navMenu {
   display: flex;
   flex-direction: row;
@@ -91,6 +115,10 @@ a {
   font-weight: 700;
   font-size: 20px;
   color: #f8f8f8;
+}
+
+.navMenu a:hover {
+  color: tomato;
 }
 
 .toggleBtn {
@@ -131,11 +159,77 @@ a {
   }
 }
 
+/*각 페이지별 레이아웃*/
+
+.home,
+.profile,
+.portfolio,
+.contact {
+  width: 100%;
+  display: flex;
+}
 .home {
-  height: 1000px;
+  height: 100vh;
+  margin-top: -100px;
+}
+.profile,
+.portfolio,
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.homeImgClass {
-  margin-top: -100px;
-  z-index: 3;
+.container {
+  position: absolute;
+  /* border-top: 100px; */
+}
+.home .container.homeTitle {
+  color: white;
+  opacity: 0.9;
+  font-size: 60px;
+  font-weight: 800;
+
+  margin: 300px 100px;
+}
+
+.form {
+  /* border: 300px 100px; */
+  top: 50px;
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  height: 600px;
+
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  color: #222222;
+  font-weight: 700;
+  font-size: 30px;
+}
+.form .inForm {
+  padding: 40px 40px;
+}
+.form .introduce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+.introduce img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.form span {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 30px 30px;
 }

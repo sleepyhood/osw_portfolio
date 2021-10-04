@@ -42,7 +42,10 @@ const Navigation = () => {
 
   return scrollDirection === "down" || window.scrollY < 40 ? (
     <nav className="navBar active">
-      <div onclick={onHandleTop}>OSW</div>
+      <div className="myLogo" onclick={onHandleTop}>
+        <i class="fab fa-react"></i>
+        <span>OSW</span>
+      </div>
       <ul className="navMenu PC">
         <li>
           <Link to="/">
@@ -56,12 +59,12 @@ const Navigation = () => {
         </li>
         <li>
           <Link to="/portfolio">
-            <div>portfolio</div>
+            <div>Portfolio</div>
           </Link>
         </li>
         <li>
           <Link to="/contact">
-            <div>contact</div>
+            <div>Contact</div>
           </Link>
         </li>
       </ul>
