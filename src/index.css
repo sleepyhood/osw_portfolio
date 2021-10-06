@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 500px;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif; */
@@ -10,6 +11,8 @@ body {
   text-decoration: none;
   background-color: #f8f8f8;
   min-height: 100%;
+
+  scroll-snap-type: y mandatory;
 }
 
 code {
@@ -36,7 +39,7 @@ footer {
   height: 10px;
   background-color: rgba(50, 50, 50, 1);
   color: #f8f8f8;
-  padding: 15px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -70,6 +73,7 @@ a {
   opacity: 0.5; */
   /* 윗 속성을 쓰면, 글자도 투명도가 적용되므로 주의 */
   background-color: rgba(10, 10, 10, 0.8);
+  /* padding: 8px 12px; */
 }
 
 .navBar.active {
@@ -87,14 +91,15 @@ a {
 .myLogo {
   color: #f8f8f8;
   font-size: 30px;
-  padding: 0px 30px;
+  padding-left: 30px;
   cursor: pointer;
 }
 .myLogo:hover {
   color: turquoise;
+  transform: scale(1.2);
 }
 .myLogo span {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 .navMenu {
   display: flex;
@@ -127,26 +132,40 @@ a {
   font-size: 24px;
   color: #fefad4;
   display: none;
+
+  z-index: 1;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 830px) {
   .navBar {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-
-    /* padding: 8px 24px; */
   }
+
   .navMenu {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 12px 0px;
+    padding: 12px 0px;
+
     width: 100%;
+    background-color: rgba(10, 10, 10, 0.8);
+  }
+
+  .myLogo {
+    padding: 28px 24px;
   }
 
   .navMenu li {
     text-align: center;
     width: 100%;
+  }
+
+  .navBar a {
+    padding: 0px 8px;
+    display: block;
   }
 
   .navMenu.PC {
@@ -156,6 +175,12 @@ a {
 
   .toggleBtn {
     display: block;
+    top: 30px;
+    transition: all 0.5s;
+  }
+  .toggleBtn:hover {
+    /* transition: all 0.5s; */
+    transform: rotate(90deg);
   }
 }
 
@@ -164,17 +189,23 @@ a {
 .home,
 .profile,
 .portfolio,
-.contact {
+.contact,
+.experiences,
+.skills {
   width: 100%;
   display: flex;
+  height: 100vh;
+
+  scroll-snap-align: center;
 }
 .home {
-  height: 100vh;
   margin-top: -100px;
 }
 .profile,
 .portfolio,
-.contact {
+.contact,
+.experiences,
+.skills {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -193,6 +224,21 @@ a {
   margin: 300px 100px;
 }
 
+.home .otherLinks {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+
+.home .otherLinks i {
+  transition: all 0.5s;
+  color: white;
+}
+
+.home .otherLinks i:hover {
+  transform: scale(1.2);
+}
+
 .form {
   /* border: 300px 100px; */
   top: 50px;
@@ -201,26 +247,28 @@ a {
   max-width: 1200px;
   height: 600px;
 
-  background-color: white;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  /* background-color: white; */
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); */
   border-radius: 10px;
 
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 
-  color: #222222;
+  color: #ffffff;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 50px;
 }
-.form .inForm {
+/* .form .inForm {
   padding: 40px 40px;
-}
+} */
 .form .introduce {
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px 30px;
+  align-items: flex-start;
+  padding: 30px 0px;
+  font-size: 20px;
 }
 .introduce img {
   border-radius: 100%;
@@ -228,8 +276,9 @@ a {
   height: 200px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
-.form span {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 30px 30px;
+
+/* Skills*/
+.introduce.skills ul {
+  display: grid;
+  list-style: none;
 }

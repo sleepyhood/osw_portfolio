@@ -14,6 +14,11 @@ const Home = () => {
         <br></br>
         <span>I'm Front-End Developer.</span>
       </div>
+      <div className="otherLinks">
+        <a href="https://github.com/sleepyhood" target="_blank">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </div>
     </div>
   );
 };

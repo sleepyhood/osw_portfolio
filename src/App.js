@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./routes/Home";
@@ -16,6 +16,7 @@ function App() {
       <div className="App">
         <Router>
           <Navigation />
+          {/* 
           <Switch>
             <Route exact path="/">
               <Home />
@@ -29,12 +30,13 @@ function App() {
             <Route exact path="/contact">
               <Contact />
             </Route>
-          </Switch>
+          </Switch> */}
         </Router>
       </div>
-      <footer>&copy; {new Date().getFullYear()} made by OSW</footer>
     </>
   );
 }
 
 export default App;
+// https://medium.com/@sidbentifraouine/responsive-animated-top-navigation-bar-with-react-transition-group-fd0ccbfb4bbb
+// 참고
