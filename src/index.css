@@ -12,7 +12,7 @@ body {
   background-color: #f8f8f8;
   min-height: 100%;
 
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 code {
@@ -196,7 +196,7 @@ a {
   display: flex;
   height: 100vh;
 
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
 }
 .home {
   margin-top: -100px;
