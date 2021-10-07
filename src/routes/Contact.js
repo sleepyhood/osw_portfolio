@@ -4,7 +4,9 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="container contact" style={{ backgroundColor: "#171717" }}>
-        <div className="form contact">this is contact</div>
+        <div className="form contact" style={{ fontSize: "60px" }}>
+          Contact
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Experiences = () => {
         style={{ backgroundColor: "#171717" }}
       >
         <div className="form experiences">
-          <div>This is Experiences</div>
+          <div style={{ fontSize: "60px" }}>Experiences</div>
         </div>
       </div>
     </div>
