@@ -26,11 +26,17 @@ const Portfolio = () => {
                 {isHover1 && (
                   <>
                     <div class="bg first">
-                      <a href="/" target="_blank">
-                        <i class="fab fa-github fa-3x"></i>
+                      <a>
+                        <i
+                          class="fab fa-github fa-3x"
+                          style={{ opacity: "0.2" }}
+                        ></i>
                       </a>
-                      <a href="/" target="_blank">
-                        <i class="fas fa-play-circle fa-3x"></i>
+                      <a>
+                        <i
+                          class="fas fa-play-circle fa-3x"
+                          style={{ opacity: "0.2" }}
+                        ></i>
                       </a>
                     </div>
                   </>
@@ -110,10 +116,55 @@ const Portfolio = () => {
                     </div>
                   </>
                 )}
-                <span>Movue App</span>
+                <span>Movie App</span>
               </li>
-              <li>5</li>
-              <li>6</li>
+              <li
+                id="fifth"
+                onMouseEnter={() => setIsHover5(true)}
+                onMouseLeave={() => setIsHover5(false)}
+              >
+                {isHover5 && (
+                  <>
+                    <div class="bg second">
+                      <a
+                        href="https://github.com/sleepyhood/movie_app_2021"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i>
+                      </a>
+                      <a>
+                        <i
+                          class="fas fa-play-circle fa-3x"
+                          style={{ opacity: "0.2" }}
+                        ></i>
+                      </a>
+                    </div>
+                  </>
+                )}
+                <span>엄마의 잔소리</span>
+              </li>
+              <li
+                id="sixth"
+                onMouseEnter={() => setIsHover6(true)}
+                onMouseLeave={() => setIsHover6(false)}
+              >
+                {isHover6 && (
+                  <>
+                    <div class="bg second">
+                      <a
+                        href="https://github.com/sleepyhood/fokin-weather"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i>
+                      </a>
+                      <a style={{ opacity: "0.2" }}>
+                        <i class="fas fa-play-circle fa-3x"></i>
+                      </a>
+                    </div>
+                  </>
+                )}
+                <span>날씨API 앱</span>
+              </li>
             </ul>
           </div>
         </div>

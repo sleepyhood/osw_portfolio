@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import profileImg from "../imgs/profile.jpg";
-import homeImg from "../imgs/home2.jpg";
-
+import programmers from "../imgs/programmers.png";
+import osw from "../imgs/osw.mp4";
 const Profile = () => {
   return (
     <div className="profile">
@@ -11,6 +11,9 @@ const Profile = () => {
             <div style={{ fontSize: "60px" }}>About</div>
             <div className="introduce">
               <img src={profileImg} />
+              {/* <video>
+                <source src={osw} type="video/mp4" />
+              </video> */}
               <div
                 style={{
                   fontWeight: 500,
@@ -28,6 +31,22 @@ const Profile = () => {
                 <span style={{ fontWeight: 900 }}>JS, React, C++, Python</span>
                 을 활용하고 있습니다.
               </div>
+            </div>
+            <div className="introduce" style={{ marginTop: "250px" }}>
+              <a
+                href="https://programmers.co.kr/job_profiles/53112"
+                target="_blank"
+              >
+                <img
+                  src={programmers}
+                  style={{
+                    width: "300px",
+                    height: "100%",
+                    borderRadius: "0",
+                    boxShadow: "none",
+                  }}
+                />
+              </a>
             </div>
           </div>
         </div>
