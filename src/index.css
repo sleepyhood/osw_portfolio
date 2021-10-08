@@ -403,7 +403,7 @@ ul {
 .introduce.portfolio ul {
   display: grid;
   /* grid-template-rows: repeat(auto-fit, minmax(150px, 1fr)); */
-
+  position: absolute;
   grid-template-rows: repeat(2, minmax(120px, 250px));
   grid-template-columns: repeat(3, minmax(120px, 320px));
   /* justify-items: stretch; */
@@ -424,11 +424,60 @@ ul {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 .portfolio span {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f8f8f8;
   width: 100%;
   text-align: center;
-  padding: 10px 0px;
+  padding: 15px 0px;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.portfolio ul li {
+  background-size: cover;
+  background-position: center center;
+}
+
+.portfolio li:hover {
+  /* opacity: 0.2; */
+  /* z-index: 1; */
+  transition: all 0.5s;
+  content: "";
+  /* background-color: #000; */
+  transform: scale(1.1);
+  /* cursor: pointer; */
+}
+.portfolio a {
+  z-index: 1;
+}
+.portfolio a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s;
+}
+.portfolio ul #first {
+  background-image: url(./imgs/잉어킹.png);
+}
+
+.portfolio ul #second {
+  background-image: url(./imgs/momentum.png);
+}
+.portfolio ul #third {
+  background-image: url(./imgs/squidGame.png);
+}
+.portfolio ul #forth {
+  background-image: url(./imgs/movieApp.png);
+}
+.bg {
+  background-color: rgba(0, 0, 0, 0.7); /*살짝 투명한 검정으로 배경색*/
+  width: 100%;
+  height: 100%;
+  position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bg a {
+  color: #f8f8f8;
 }
