@@ -39,7 +39,10 @@ const Skills = () => {
                 <li>
                   <span>Front End</span>
                   <div className="icons">
-                    <img src={html} style={iconStyle} />
+                    <div style={{ display: "block", textAlign: "center" }}>
+                      <img src={html} style={iconStyle} />
+                      <p style={{ display: "none" }}>html5</p>
+                    </div>
                     <img src={css} style={iconStyle} />
                     <img src={js} style={iconStyle} />
                     <img src={react} style={iconStyle} />

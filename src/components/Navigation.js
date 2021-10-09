@@ -152,7 +152,10 @@ const Navigation = () => {
       <div ref={section5Ref} style={{ height: "100vh", margin: 0 }}>
         <Contact />
       </div>
-      <footer>&copy; {new Date().getFullYear()} made by OSW</footer>
+      <footer>
+        &copy; {new Date().getFullYear()} OSW <br /> This website is made
+        react.js.{" "}
+      </footer>
     </>
   );
 };
