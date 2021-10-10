@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import profileImg from "../imgs/profile.jpg";
+import React, { useEffect } from "react";
 import programmers from "../imgs/programmers.png";
 import osw from "../imgs/osw.jpg";
 
@@ -23,7 +22,7 @@ const Profile = () => {
           <div className="inForm">
             <div style={{ fontSize: "60px" }}>About</div>
             <div className="introduce">
-              <img src={osw} data-aos="fade-right" />
+              <img src={osw} data-aos="fade-right" alt="myProfile" />
 
               <div className="aboutMe" data-aos="fade-left">
                 <div
@@ -59,9 +58,10 @@ const Profile = () => {
               </div>
               <a
                 href="https://programmers.co.kr/job_profiles/53112"
+                rel="noreferrer"
                 target="_blank"
               >
-                <img src={programmers} />
+                <img src={programmers} alt="programmers" />
               </a>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import c from "../imgs/icons/c.svg";
 import cplusplus from "../imgs/icons/cplusplus.svg";
 import css from "../imgs/icons/css3.svg";
@@ -32,7 +32,8 @@ const Skills = () => {
       duration: 600,
       easing: "ease-in-sine",
       delay: 100,
-      placement: "top-bottom",
+      // mirror: "true",
+      placement: "top-center",
     });
   });
 
@@ -44,6 +45,7 @@ const Skills = () => {
           style={{
             color: "#171717",
             fontSize: "60px",
+            height: "100vh",
           }}
         >
           <div className="inForm">
@@ -54,35 +56,36 @@ const Skills = () => {
                   <span>Front End</span>
                   <div className="icons">
                     <div style={{ display: "block", textAlign: "center" }}>
-                      <img src={html} style={iconStyle} />
+                      <img src={html} style={iconStyle} alt="html5" />
+
                       <p style={{ display: "none" }}>html5</p>
                     </div>
-                    <img src={css} style={iconStyle} />
-                    <img src={js} style={iconStyle} />
-                    <img src={react} style={iconStyle} />
+                    <img src={css} style={iconStyle} alt="css" />
+                    <img src={js} style={iconStyle} alt="js" />
+                    <img src={react} style={iconStyle} alt="react" />
                   </div>
                 </li>
                 <li data-aos="fade-right">
                   <span>Back End</span>
                   <div className="icons">
-                    <img src={nodeJs} style={iconStyle} />
-                    <img src={php} style={iconStyle} />
+                    <img src={nodeJs} style={iconStyle} alt="nodeJs" />
+                    <img src={php} style={iconStyle} alt="php" />
                   </div>
                 </li>
                 <li data-aos="fade-left">
                   <span>Algorithm</span>
                   <div className="icons">
-                    <img src={c} style={iconStyle} />
-                    <img src={cplusplus} style={iconStyle} />
-                    <img src={python} style={iconStyle} />
-                    <img src={r} style={iconStyle} />
+                    <img src={c} style={iconStyle} alt="c" />
+                    <img src={cplusplus} style={iconStyle} alt="c++" />
+                    <img src={python} style={iconStyle} alt="python" />
+                    <img src={r} style={iconStyle} alt="r" />
                   </div>
                 </li>
                 <li data-aos="fade-right">
                   <span>DataBase</span>
                   <div className="icons">
-                    <img src={mysql} style={iconStyle} />
-                    <img src={firebase} style={iconStyle} />
+                    <img src={mysql} style={iconStyle} alt="mysql" />
+                    <img src={firebase} style={iconStyle} alt="firebase" />
                   </div>
                 </li>
               </ul>

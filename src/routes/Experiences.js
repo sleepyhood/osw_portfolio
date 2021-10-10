@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -85,7 +85,7 @@ const Experiences = () => {
                 <h3 className="vertical-timeline-element-title">
                   고려대학교 입학
                 </h3>
-                <h4 className="vertical-timeline-element-subtitle"></h4>
+                {/* <h4 className="vertical-timeline-element-subtitle"></h4> */}
                 <p></p>
               </VerticalTimelineElement>
             </VerticalTimeline>

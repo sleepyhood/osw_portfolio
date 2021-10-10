@@ -1,12 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
-import React, { useState, useRef } from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-
-import Home from "./routes/Home";
-import Profile from "./routes/Profile";
-import Portfolio from "./routes/Portfolio";
-import Contact from "./routes/Contact";
+import React from "react";
+import { HashRouter as Router } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
 
@@ -38,5 +32,3 @@ function App() {
 }
 
 export default App;
-// https://medium.com/@sidbentifraouine/responsive-animated-top-navigation-bar-with-react-transition-group-fd0ccbfb4bbb
-// 참고

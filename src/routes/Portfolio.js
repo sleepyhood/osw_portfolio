@@ -39,13 +39,13 @@ const Portfolio = () => {
                 {isHover1 && (
                   <>
                     <div class="bg first">
-                      <a>
+                      <a href="/">
                         <i
                           class="fab fa-github fa-3x"
                           style={{ opacity: "0.2" }}
                         ></i>
                       </a>
-                      <a>
+                      <a href="/">
                         <i
                           class="fas fa-play-circle fa-3x"
                           style={{ opacity: "0.2" }}
@@ -68,12 +68,14 @@ const Portfolio = () => {
                       <a
                         href="https://github.com/sleepyhood/VaniliaJS2021_Momentum"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fab fa-github fa-3x"></i>
                       </a>
                       <a
                         href="https://sleepyhood.github.io/VaniliaJS2021_Momentum/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fas fa-play-circle fa-3x"></i>
                       </a>
@@ -90,16 +92,18 @@ const Portfolio = () => {
               >
                 {isHover3 && (
                   <>
-                    <div class="bg second">
+                    <div class="bg third">
                       <a
                         href="https://github.com/sleepyhood/nwitter"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fab fa-github fa-3x"></i>
                       </a>
                       <a
                         href="https://sleepyhood.github.io/nwitter/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fas fa-play-circle fa-3x"></i>
                       </a>
@@ -116,16 +120,18 @@ const Portfolio = () => {
               >
                 {isHover4 && (
                   <>
-                    <div class="bg second">
+                    <div class="bg forth">
                       <a
                         href="https://github.com/sleepyhood/movie_app_2021"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fab fa-github fa-3x"></i>
                       </a>
                       <a
                         href="https://sleepyhood.github.io/movie_app_2021/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fas fa-play-circle fa-3x"></i>
                       </a>
@@ -142,14 +148,15 @@ const Portfolio = () => {
               >
                 {isHover5 && (
                   <>
-                    <div class="bg second">
+                    <div class="bg fifth">
                       <a
                         href="https://github.com/sleepyhood/movie_app_2021"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fab fa-github fa-3x"></i>
                       </a>
-                      <a>
+                      <a href="/">
                         <i
                           class="fas fa-play-circle fa-3x"
                           style={{ opacity: "0.2" }}
@@ -168,14 +175,15 @@ const Portfolio = () => {
               >
                 {isHover6 && (
                   <>
-                    <div class="bg second">
+                    <div class="bg sizth">
                       <a
                         href="https://github.com/sleepyhood/fokin-weather"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <i class="fab fa-github fa-3x"></i>
                       </a>
-                      <a style={{ opacity: "0.2" }}>
+                      <a style={{ opacity: "0.2" }} href="/">
                         <i class="fas fa-play-circle fa-3x"></i>
                       </a>
                     </div>

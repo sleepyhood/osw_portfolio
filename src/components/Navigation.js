@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import useMediaQuery from "react-responsive";
 
 import Home from "../routes/Home";
 import Profile from "../routes/Profile";
@@ -123,7 +122,7 @@ const Navigation = () => {
                 </li>
               </ul>
             )}
-            <a href="#" className="toggleBtn" onClick={onToggleNav}>
+            <a href="/" className="toggleBtn" onClick={onToggleNav}>
               <i class="fas fa-bars"></i>
             </a>
           </nav>
@@ -154,7 +153,7 @@ const Navigation = () => {
       </div>
       <footer>
         &copy; {new Date().getFullYear()} OSW <br /> This website is made
-        react.js.{" "}
+        react.js. ( * This site is optimized web.)
       </footer>
     </>
   );

@@ -17,6 +17,7 @@ body {
   text-decoration: none;
   background-color: #f8f8f8;
   min-height: 100%;
+  min-width: auto;
   /* width: 100vw; */
   /* scroll-snap-type: y mandatory; */
 }
@@ -153,6 +154,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100vw;
   }
 
   .navMenu {
@@ -252,6 +254,9 @@ ul {
 }
 
 @media screen and (max-width: 830px) {
+  .home {
+    width: 100vw;
+  }
   .home .container.homeTitle {
     text-align: center;
   }
@@ -261,6 +266,21 @@ ul {
   position: absolute;
   bottom: 5%;
   right: 10%;
+
+  animation-duration: 2s;
+  animation-name: slidein3;
+}
+
+@keyframes slidein3 {
+  from {
+    right: 0%;
+    /* width: 100%; */
+  }
+
+  to {
+    right: 10%;
+    /* width: 100%; */
+  }
 }
 
 .home .otherLinks i {
@@ -270,6 +290,69 @@ ul {
 
 .home .otherLinks i:hover {
   transform: scale(1.2);
+}
+
+/* Scroll Down */
+
+.scrolldown-wrapper {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+
+  top: 92%;
+  animation-duration: 2s;
+  animation-name: slidein2;
+
+  cursor: pointer;
+}
+
+@keyframes slidein2 {
+  from {
+    top: 100%;
+    /* width: 100%; */
+  }
+
+  to {
+    top: 92%;
+    /* width: 100%; */
+  }
+}
+.scrolldown {
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  height: 46px;
+  margin: 0 auto 8px;
+  text-align: center;
+  width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+  animation-duration: 1.5s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  fill: #ffffff;
+}
+
+.scrolldown-p2 {
+  animation-delay: 0.75s;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
 }
 
 .form {
@@ -370,7 +453,7 @@ ul {
   .form.profile .introduce.other {
     display: flex;
     flex-direction: column;
-    margin-top: 400px;
+    margin-top: 370px;
     align-items: center;
     font-size: 15px;
   }
@@ -383,7 +466,7 @@ ul {
 .introduce.skills {
   justify-content: center;
   padding: 0 0;
-  height: 560px;
+  height: 100%;
 }
 .introduce.skills ul {
   display: flex;
@@ -391,13 +474,14 @@ ul {
   padding: 0 0;
   width: 100%;
   max-width: 1000px;
-  height: 100%;
+  height: 80%;
   margin: 0px 0px;
 }
 .introduce.skills li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  height: 130px;
   /* max-width: 1000px; */
 }
 .introduce.skills span {
@@ -442,10 +526,17 @@ ul {
   display: block;
 }
 @media screen and (max-width: 830px) {
+  .introduce.skills {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+  }
   .introduce.skills ul {
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 0px;
+    align-items: flex-start;
   }
   .skillSection {
     justify-content: center;
@@ -459,18 +550,15 @@ ul {
   .skillSection li {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    /* height: 100%; */
+    justify-content: flex-start;
   }
   .introduce.skills .icons {
     flex-direction: column;
     width: 100px;
-    height: 50vh;
+    height: 100%;
+    min-height: 60vh;
     margin-top: 20px;
     padding: 0px 12px;
-
-    /* margin: 20px 20px; */
-    /* width: 30px; */
   }
   .introduce.skills .icons img {
     width: 30vh;
@@ -493,13 +581,14 @@ ul {
 }
 
 .introduce.experiences::-webkit-scrollbar {
-  width: 10px;
-  background-color: transparent;
+  width: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: transparent; */
 }
 
 .introduce.experiences::-webkit-scrollbar-thumb {
   background-color: #f8f8f8;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 /*portfolio*/
@@ -570,7 +659,7 @@ ul {
   background-image: url(./imgs/momentum.png);
 }
 .portfolio ul #third {
-  background-image: url(./imgs/squidGame.png);
+  background-image: url(./imgs/squidGame.jpg);
   background-position: center top;
 }
 .portfolio ul #forth {
@@ -578,7 +667,8 @@ ul {
   background-position: left center;
 }
 .portfolio ul #fifth {
-  background-image: url(./imgs/momsNag.png);
+  background-image: url(./imgs/momsNag.jpg);
+  background-position: center top;
 }
 .portfolio ul #sixth {
   background-image: url(./imgs/weather.png);
