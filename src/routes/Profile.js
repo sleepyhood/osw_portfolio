@@ -2,7 +2,20 @@ import React, { useState, useEffect } from "react";
 import profileImg from "../imgs/profile.jpg";
 import programmers from "../imgs/programmers.png";
 import osw from "../imgs/osw.jpg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Profile = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+      placement: "top-center",
+    });
+  });
   return (
     <div className="profile">
       <div className="container profile" style={{ backgroundColor: "#171717" }}>
@@ -10,18 +23,21 @@ const Profile = () => {
           <div className="inForm">
             <div style={{ fontSize: "60px" }}>About</div>
             <div className="introduce">
-              <img src={osw} />
+              <img src={osw} data-aos="fade-right" />
 
-              <div className="aboutMe">
+              <div className="aboutMe" data-aos="fade-left">
                 <div
                   style={{
                     fontWeight: 800,
                     paddingBottom: "40px",
                   }}
+
+                  // data-aos-delay="100"
+                  // data-aos-anchor=".example-selector"
                 >
                   안녕하세요.
                   <br />
-                  『신입 개발자』 오승원 입니다.
+                  『신입 개발자』 오승원입니다.
                 </div>
                 현재 고려대학교 (세종캠퍼스) 휴학 중이며, 웹앱 개발 및 데이터
                 관리 분야에 주력하고 있습니다. <br />
@@ -30,7 +46,7 @@ const Profile = () => {
                 을 활용하고 있습니다.
               </div>
             </div>
-            <div className="introduce other">
+            <div className="introduce other" data-aos="fade-up">
               <div style={{ margin: "10px 20px" }}>
                 <i class="fas fa-phone-alt"></i>
                 <span style={{ margin: "20px 20px" }}>010-1234-5678</span>

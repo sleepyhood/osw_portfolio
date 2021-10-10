@@ -12,6 +12,9 @@ import mysql from "../imgs/icons/mysql.svg";
 import firebase from "../imgs/icons/firebase.svg";
 import r from "../imgs/icons/r.svg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Skills = () => {
   const iconWH = "70px";
   const iconStyle = {
@@ -22,6 +25,17 @@ const Skills = () => {
     boxShadow: "none",
     padding: "5px 5px",
   };
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+      placement: "top-bottom",
+    });
+  });
+
   return (
     <div className="skills">
       <div className="container skills" style={{ backgroundColor: "#f8f8f8" }}>
@@ -36,7 +50,7 @@ const Skills = () => {
             <div style={{ fontSize: "60px" }}>Skills</div>
             <div className="introduce skills">
               <ul className="skillSection">
-                <li>
+                <li data-aos="fade-left">
                   <span>Front End</span>
                   <div className="icons">
                     <div style={{ display: "block", textAlign: "center" }}>
@@ -48,14 +62,14 @@ const Skills = () => {
                     <img src={react} style={iconStyle} />
                   </div>
                 </li>
-                <li>
+                <li data-aos="fade-right">
                   <span>Back End</span>
                   <div className="icons">
                     <img src={nodeJs} style={iconStyle} />
                     <img src={php} style={iconStyle} />
                   </div>
                 </li>
-                <li>
+                <li data-aos="fade-left">
                   <span>Algorithm</span>
                   <div className="icons">
                     <img src={c} style={iconStyle} />
@@ -64,7 +78,7 @@ const Skills = () => {
                     <img src={r} style={iconStyle} />
                   </div>
                 </li>
-                <li>
+                <li data-aos="fade-right">
                   <span>DataBase</span>
                   <div className="icons">
                     <img src={mysql} style={iconStyle} />

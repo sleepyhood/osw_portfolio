@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
   const [isHover1, setIsHover1] = useState(false);
@@ -7,6 +9,16 @@ const Portfolio = () => {
   const [isHover4, setIsHover4] = useState(false);
   const [isHover5, setIsHover5] = useState(false);
   const [isHover6, setIsHover6] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+      placement: "top-center",
+    });
+  });
 
   return (
     <div className="portfolio">
@@ -22,6 +34,7 @@ const Portfolio = () => {
                 id="first"
                 onMouseEnter={() => setIsHover1(true)}
                 onMouseLeave={() => setIsHover1(false)}
+                data-aos="fade-down-right"
               >
                 {isHover1 && (
                   <>
@@ -47,6 +60,7 @@ const Portfolio = () => {
                 id="second"
                 onMouseEnter={() => setIsHover2(true)}
                 onMouseLeave={() => setIsHover2(false)}
+                data-aos="fade-down"
               >
                 {isHover2 && (
                   <>
@@ -72,6 +86,7 @@ const Portfolio = () => {
                 id="third"
                 onMouseEnter={() => setIsHover3(true)}
                 onMouseLeave={() => setIsHover3(false)}
+                data-aos="fade-down-left"
               >
                 {isHover3 && (
                   <>
@@ -97,6 +112,7 @@ const Portfolio = () => {
                 id="forth"
                 onMouseEnter={() => setIsHover4(true)}
                 onMouseLeave={() => setIsHover4(false)}
+                data-aos="fade-up-right"
               >
                 {isHover4 && (
                   <>
@@ -122,6 +138,7 @@ const Portfolio = () => {
                 id="fifth"
                 onMouseEnter={() => setIsHover5(true)}
                 onMouseLeave={() => setIsHover5(false)}
+                data-aos="fade-up"
               >
                 {isHover5 && (
                   <>
@@ -147,6 +164,7 @@ const Portfolio = () => {
                 id="sixth"
                 onMouseEnter={() => setIsHover6(true)}
                 onMouseLeave={() => setIsHover6(false)}
+                data-aos="fade-up-left"
               >
                 {isHover6 && (
                   <>

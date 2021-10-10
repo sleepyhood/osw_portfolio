@@ -11,6 +11,7 @@ body {
   text-decoration: none;
   background-color: #f8f8f8;
   min-height: 100%;
+  width: 100%;
   /* scroll-snap-type: y mandatory; */
 }
 
@@ -376,6 +377,7 @@ ul {
 .introduce.skills {
   justify-content: center;
   padding: 0 0;
+  height: 560px;
 }
 .introduce.skills ul {
   display: flex;
@@ -383,6 +385,8 @@ ul {
   padding: 0 0;
   width: 100%;
   max-width: 1000px;
+  height: 100%;
+  margin: 0px 0px;
 }
 .introduce.skills li {
   display: flex;
@@ -478,8 +482,10 @@ ul {
 
   overflow: auto;
 
+  width: 100%;
   height: 400px;
 }
+
 .introduce.experiences::-webkit-scrollbar {
   width: 10px;
   background-color: transparent;
