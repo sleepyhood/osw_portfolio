@@ -55,7 +55,8 @@ footer {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상 제거 */
 }
 
 ul {
@@ -319,6 +320,7 @@ ul {
     /* width: 100%; */
   }
 }
+
 .scrolldown {
   border: 3px solid #ffffff;
   border-radius: 30px;
@@ -326,6 +328,12 @@ ul {
   margin: 0 auto 8px;
   text-align: center;
   width: 30px;
+}
+
+.scrolldown:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
+  /* transform: translate(0px, -10px); */
 }
 
 .scrolldown-p1,
@@ -435,6 +443,11 @@ ul {
   height: 100%;
   border-radius: 0;
   box-shadow: none;
+}
+
+.introduce.other div:hover {
+  transition: all 0.2s;
+  transform: scale(1.2);
 }
 @media screen and (max-width: 830px) {
   .form.profile .introduce {

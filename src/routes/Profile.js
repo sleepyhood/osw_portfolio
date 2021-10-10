@@ -56,13 +56,36 @@ const Profile = () => {
                   ********@korea.ac.kr
                 </span>
               </div>
-              <a
-                href="https://programmers.co.kr/job_profiles/53112"
-                rel="noreferrer"
-                target="_blank"
+              <div
+                style={{
+                  display: "flex",
+                  margin: "10px 10px",
+                  alignItems: "center",
+                }}
               >
-                <img src={programmers} alt="programmers" />
-              </a>
+                <a
+                  href="https://github.com/sleepyhood"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                  <span style={{ margin: "10px 10px" }}>GitHub </span>
+                </a>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <a
+                  href="https://programmers.co.kr/job_profiles/53112"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <img src={programmers} alt="programmers" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
