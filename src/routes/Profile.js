@@ -15,6 +15,7 @@ const Profile = () => {
       placement: "top-center",
     });
   });
+
   return (
     <div className="profile">
       <div className="container profile" style={{ backgroundColor: "#171717" }}>
@@ -47,11 +48,11 @@ const Profile = () => {
             </div>
             <div className="introduce other" data-aos="fade-up">
               <div style={{ margin: "10px 20px" }}>
-                <i class="fas fa-phone-alt"></i>
+                <i className="fas fa-phone-alt"></i>
                 <span style={{ margin: "20px 20px" }}>010-1234-5678</span>
               </div>
               <div style={{ margin: "10px 20px" }}>
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
                 <span style={{ margin: "20px 20px" }}>
                   ********@korea.ac.kr
                 </span>
@@ -68,7 +69,7 @@ const Profile = () => {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <i class="fab fa-github fa-2x"></i>
+                  <i className="fab fa-github fa-2x"></i>
                   <span style={{ margin: "10px 10px" }}>GitHub </span>
                 </a>
               </div>

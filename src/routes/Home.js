@@ -15,20 +15,21 @@ const Home = () => {
       className="home"
       style={{
         backgroundImage: `url(${homeImg})`,
+        backgroundPosition: "center",
       }}
     >
       {/* <img src={homeImg} className="homeImgClass" /> */}
       <div className="container homeTitle">
         <span>Hello</span>
         <br></br>
-        <span>I'm Front-End Developer.</span>
+        <span>I'm Front End Developer.</span>
       </div>
 
-      <div class="scrolldown-wrapper" onClick={() => scrollTo(section1Ref)}>
-        <div class="scrolldown">
+      <div className="scrolldown-wrapper" onClick={() => scrollTo(section1Ref)}>
+        <div className="scrolldown">
           <svg height="30" width="10">
-            <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-            <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+            <circle className="scrolldown-p1" cx="5" cy="15" r="2" />
+            <circle className="scrolldown-p2" cx="5" cy="15" r="2" />
           </svg>
         </div>
       </div>
@@ -38,7 +39,7 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fab fa-github fa-3x"></i>
+          <i className="fab fa-github fa-3x"></i>
         </a>
       </div>
 

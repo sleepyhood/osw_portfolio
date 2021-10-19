@@ -11,12 +11,18 @@ import react from "../imgs/icons/react.svg";
 import mysql from "../imgs/icons/mysql.svg";
 import firebase from "../imgs/icons/firebase.svg";
 import r from "../imgs/icons/r.svg";
+import mongodb from "../imgs/icons/mongodb.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useMediaQuery } from "react-responsive";
 
 const Skills = () => {
-  const iconWH = "70px";
+  const isMobile = useMediaQuery({
+    query: "(max-width:830px)",
+  });
+
+  const iconWH = isMobile ? "50px" : "70px";
   const iconStyle = {
     borderRadius: "0",
     width: iconWH,
@@ -85,6 +91,7 @@ const Skills = () => {
                   <span>DataBase</span>
                   <div className="icons">
                     <img src={mysql} style={iconStyle} alt="mysql" />
+                    <img src={mongodb} style={iconStyle} alt="mysql" />
                     <img src={firebase} style={iconStyle} alt="firebase" />
                   </div>
                 </li>

@@ -1,9 +1,11 @@
 html,
 body {
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+
+  overflow-x: hidden;
 }
 body {
   /* min-width: 500px; */
@@ -21,7 +23,12 @@ body {
   /* width: 100vw; */
   /* scroll-snap-type: y mandatory; */
 }
-
+/* @media screen and (max-width: 830px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -29,6 +36,7 @@ code {
 
 .App {
   height: 100vh;
+  width: 100%;
   margin-top: 100px;
 }
 
@@ -43,7 +51,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 10px;
+  height: 100px;
   background-color: rgba(50, 50, 50, 1);
   color: #f8f8f8;
   padding: 30px 0;
@@ -210,7 +218,7 @@ ul {
   width: 100%;
   display: flex;
   height: 100vh;
-
+  padding: 0px 0px;
   /* scroll-snap-align: center; */
 }
 .home {
@@ -227,6 +235,7 @@ ul {
 }
 
 .container {
+  /* width: 100%; */
   position: absolute;
   /* border-top: 100px; */
 }
@@ -256,10 +265,24 @@ ul {
 
 @media screen and (max-width: 830px) {
   .home {
-    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    /* max-width: 100%; */
+    /* overflow-x: hidden; */
+  }
+  .home .container {
+    width: 100%;
+    height: 100vh;
   }
   .home .container.homeTitle {
-    text-align: center;
+    font-size: 45px;
+    top: 10%;
+    /* margin: 50% 0; */
   }
 }
 
@@ -447,7 +470,8 @@ ul {
 
 .introduce.other div:hover {
   transition: all 0.2s;
-  transform: scale(1.2);
+  border-bottom: 3px solid #f8f8f8;
+  /* transform: scale(1.2); */
 }
 @media screen and (max-width: 830px) {
   .form.profile .introduce {
@@ -466,7 +490,7 @@ ul {
   .form.profile .introduce.other {
     display: flex;
     flex-direction: column;
-    margin-top: 370px;
+    margin-top: 420px;
     align-items: center;
     font-size: 15px;
   }
@@ -542,14 +566,14 @@ ul {
   .introduce.skills {
     display: flex;
     flex-direction: row;
-
     align-items: flex-start;
   }
   .introduce.skills ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 0px;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
   }
   .skillSection {
     justify-content: center;
@@ -557,25 +581,27 @@ ul {
   }
 
   .introduce.skills span {
-    display: flex;
-    width: 100px;
+    display: none;
+    /* width: 100px; */
   }
   .skillSection li {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
   }
   .introduce.skills .icons {
-    flex-direction: column;
-    width: 100px;
-    height: 100%;
-    min-height: 60vh;
+    flex-direction: row;
+    width: 80%;
+    min-width: 300px;
+    /* max-width: 600px; */
+    height: 80%;
+    /* min-height: 60vh; */
     margin-top: 20px;
     padding: 0px 12px;
   }
-  .introduce.skills .icons img {
-    width: 30vh;
-    height: 30vh;
+  .introduce.skills .skillSection .icons img {
+    width: 20vh;
+    height: 20vh;
   }
 }
 /*experiences*/
@@ -594,7 +620,7 @@ ul {
 }
 
 .introduce.experiences::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
   background-color: rgba(0, 0, 0, 0.2);
   /* background-color: transparent; */
 }
@@ -702,6 +728,22 @@ ul {
   color: #f8f8f8;
 }
 @media screen and (max-width: 830px) {
+  .introduce.portfolio {
+    /* justify-content: center; */
+    display: flex;
+  }
+  .introduce.portfolio ul {
+    display: grid;
+    /* grid-template-rows: repeat(auto-fit, minmax(150px, 1fr)); */
+    position: absolute;
+    grid-template-rows: repeat(3, minmax(120px, 200px));
+    grid-template-columns: repeat(2, minmax(120px, 320px));
+    /* justify-items: stretch; */
+    /* grid-auto-columns: minmax(100px, auto); */
+
+    gap: 20px 40px;
+  }
+
   .bg {
     flex-direction: column;
     justify-content: space-evenly;
@@ -778,4 +820,24 @@ ul {
   background-color: #f8f8f8;
   color: #171717;
   border: 3px solid transparent;
+}
+@media screen and (max-width: 830px) {
+  .form.contact .introduce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-form label {
+    display: none;
+  }
+  .contact-form input {
+    width: 100%;
+    max-width: 600px;
+  }
 }
