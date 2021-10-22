@@ -455,7 +455,8 @@ ul {
   word-break: keep-all;
 }
 .form.profile .introduce.other {
-  margin-top: 250px;
+  /* margin-top: 250px; */
+  bottom: 10px;
   display: flex;
   flex-direction: column;
   /* justify-content: flex-start; */
@@ -490,7 +491,7 @@ ul {
   .form.profile .introduce.other {
     display: flex;
     flex-direction: column;
-    margin-top: 420px;
+    top: 100%;
     align-items: center;
     font-size: 15px;
   }

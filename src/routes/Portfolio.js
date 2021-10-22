@@ -38,16 +38,16 @@ const Portfolio = () => {
               >
                 {isHover1 && (
                   <>
-                    <div class="bg first">
+                    <div className="bg first">
                       <a href="/">
                         <i
-                          class="fab fa-github fa-3x"
+                          className="fab fa-github fa-3x"
                           style={{ opacity: "0.2" }}
                         ></i>
                       </a>
                       <a href="/">
                         <i
-                          class="fas fa-play-circle fa-3x"
+                          className="fas fa-play-circle fa-3x"
                           style={{ opacity: "0.2" }}
                         ></i>
                       </a>
@@ -64,20 +64,20 @@ const Portfolio = () => {
               >
                 {isHover2 && (
                   <>
-                    <div class="bg second">
+                    <div className="bg second">
                       <a
                         href="https://github.com/sleepyhood/VaniliaJS2021_Momentum"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fab fa-github fa-3x"></i>
+                        <i className="fab fa-github fa-3x"></i>
                       </a>
                       <a
                         href="https://sleepyhood.github.io/VaniliaJS2021_Momentum/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fas fa-play-circle fa-3x"></i>
+                        <i className="fas fa-play-circle fa-3x"></i>
                       </a>
                     </div>
                   </>
@@ -92,20 +92,20 @@ const Portfolio = () => {
               >
                 {isHover3 && (
                   <>
-                    <div class="bg third">
+                    <div className="bg third">
                       <a
                         href="https://github.com/sleepyhood/nwitter"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fab fa-github fa-3x"></i>
+                        <i className="fab fa-github fa-3x"></i>
                       </a>
                       <a
                         href="https://sleepyhood.github.io/nwitter/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fas fa-play-circle fa-3x"></i>
+                        <i className="fas fa-play-circle fa-3x"></i>
                       </a>
                     </div>
                   </>
@@ -120,20 +120,20 @@ const Portfolio = () => {
               >
                 {isHover4 && (
                   <>
-                    <div class="bg forth">
+                    <div className="bg forth">
                       <a
                         href="https://github.com/sleepyhood/movie_app_2021"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fab fa-github fa-3x"></i>
+                        <i className="fab fa-github fa-3x"></i>
                       </a>
                       <a
                         href="https://sleepyhood.github.io/movie_app_2021/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fas fa-play-circle fa-3x"></i>
+                        <i className="fas fa-play-circle fa-3x"></i>
                       </a>
                     </div>
                   </>
@@ -148,17 +148,17 @@ const Portfolio = () => {
               >
                 {isHover5 && (
                   <>
-                    <div class="bg fifth">
+                    <div className="bg fifth">
                       <a
                         href="https://github.com/sleepyhood/movie_app_2021"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fab fa-github fa-3x"></i>
+                        <i className="fab fa-github fa-3x"></i>
                       </a>
                       <a href="/">
                         <i
-                          class="fas fa-play-circle fa-3x"
+                          className="fas fa-play-circle fa-3x"
                           style={{ opacity: "0.2" }}
                         ></i>
                       </a>
@@ -175,16 +175,16 @@ const Portfolio = () => {
               >
                 {isHover6 && (
                   <>
-                    <div class="bg sizth">
+                    <div className="bg sizth">
                       <a
                         href="https://github.com/sleepyhood/fokin-weather"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i class="fab fa-github fa-3x"></i>
+                        <i className="fab fa-github fa-3x"></i>
                       </a>
                       <a style={{ opacity: "0.2" }} href="/">
-                        <i class="fas fa-play-circle fa-3x"></i>
+                        <i className="fas fa-play-circle fa-3x"></i>
                       </a>
                     </div>
                   </>
