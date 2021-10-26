@@ -151,7 +151,8 @@ const Navigation = () => {
       <div ref={section5Ref} style={{ height: "100vh", margin: 0 }}>
         <Contact />
       </div>
-      <footer>
+
+      <footer style={{ height: "100px" }}>
         &copy; {new Date().getFullYear()} OSW <br /> This website is made
         react.js. ( * This site is optimized web.)
       </footer>

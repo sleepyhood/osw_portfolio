@@ -16,6 +16,9 @@ const Home = () => {
       style={{
         backgroundImage: `url(${homeImg})`,
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "100vh",
       }}
     >
       {/* <img src={homeImg} className="homeImgClass" /> */}
