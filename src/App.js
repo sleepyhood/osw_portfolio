@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <>
+    <div>
       <div className="App">
         <Router>
           <Navigation />
@@ -27,7 +27,7 @@ function App() {
           </Switch> */}
         </Router>
       </div>
-    </>
+    </div>
   );
 }
 

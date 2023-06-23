@@ -691,7 +691,7 @@ ul {
   transition: all 0.2s;
 }
 .portfolio ul #first {
-  background-image: url(./imgs/잉어킹.png);
+  background-image: url(./imgs/Q1_step3.gif);
 }
 
 .portfolio ul #second {
@@ -706,7 +706,7 @@ ul {
   background-position: left center;
 }
 .portfolio ul #fifth {
-  background-image: url(./imgs/momsNag.jpg);
+  background-image: url(./imgs/Q2_visualization.png);
   background-position: center top;
 }
 .portfolio ul #sixth {

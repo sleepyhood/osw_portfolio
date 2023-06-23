@@ -18,14 +18,15 @@ const Home = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "100vh",
+        minHeight: "100vh",
+        overflow: "hidden", // 화면 내용이 넘치는 것을 방지하기 위해 overflow 속성을 추가합니다.
       }}
     >
       {/* <img src={homeImg} className="homeImgClass" /> */}
       <div className="container homeTitle">
         <span>Hello</span>
         <br></br>
-        <span>I'm Front End Developer.</span>
+        <span>I'm BackEnd&Data Developer.</span>
       </div>
 
       <div className="scrolldown-wrapper" onClick={() => scrollTo(section1Ref)}>

@@ -12,6 +12,8 @@ import mysql from "../imgs/icons/mysql.svg";
 import firebase from "../imgs/icons/firebase.svg";
 import r from "../imgs/icons/r.svg";
 import mongodb from "../imgs/icons/mongodb.svg";
+import spring from "../imgs/icons/spring.svg";
+import java from "../imgs/icons/java.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -59,39 +61,33 @@ const Skills = () => {
             <div className="introduce skills">
               <ul className="skillSection">
                 <li data-aos="fade-left">
-                  <span>Front End</span>
+                  <span>Data Analysis</span>
                   <div className="icons">
-                    <div style={{ display: "block", textAlign: "center" }}>
-                      <img src={html} style={iconStyle} alt="html5" />
-
-                      <p style={{ display: "none" }}>html5</p>
-                    </div>
-                    <img src={css} style={iconStyle} alt="css" />
-                    <img src={js} style={iconStyle} alt="js" />
-                    <img src={react} style={iconStyle} alt="react" />
+                    <img src={python} style={iconStyle} alt="python" />
+                    <img src={r} style={iconStyle} alt="r" />
                   </div>
                 </li>
                 <li data-aos="fade-right">
                   <span>Back End</span>
                   <div className="icons">
                     <img src={nodeJs} style={iconStyle} alt="nodeJs" />
-                    <img src={php} style={iconStyle} alt="php" />
+                    <img src={spring} style={iconStyle} alt="spring" />
                   </div>
                 </li>
                 <li data-aos="fade-left">
-                  <span>Algorithm</span>
+                  <span>Computer Language</span>
                   <div className="icons">
                     <img src={c} style={iconStyle} alt="c" />
                     <img src={cplusplus} style={iconStyle} alt="c++" />
                     <img src={python} style={iconStyle} alt="python" />
-                    <img src={r} style={iconStyle} alt="r" />
+                    <img src={java} style={iconStyle} alt="java" />
                   </div>
                 </li>
                 <li data-aos="fade-right">
-                  <span>DataBase</span>
+                  <span>Web&DB</span>
                   <div className="icons">
                     <img src={mysql} style={iconStyle} alt="mysql" />
-                    <img src={mongodb} style={iconStyle} alt="mysql" />
+                    <img src={react} style={iconStyle} alt="react" />
                     <img src={firebase} style={iconStyle} alt="firebase" />
                   </div>
                 </li>

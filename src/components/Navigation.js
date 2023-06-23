@@ -78,9 +78,9 @@ const Navigation = () => {
   };
 
   return (
-    <>
+    <div>
       {scrollDirection === "down" || window.scrollY < 40 ? (
-        <>
+        <div>
           <nav className="navBar active">
             <div className="myLogo" onClick={onHandleTop}>
               <i class="fab fa-react fa-spin"></i>
@@ -126,7 +126,7 @@ const Navigation = () => {
               <i class="fas fa-bars"></i>
             </a>
           </nav>
-        </>
+        </div>
       ) : (
         <nav className="navBar hidden"></nav>
       )}
@@ -156,7 +156,7 @@ const Navigation = () => {
         &copy; {new Date().getFullYear()} OSW <br /> This website is made
         react.js. ( * This site is optimized web.)
       </footer>
-    </>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import osw from "../imgs/osw.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+// about 페이지
 const Profile = () => {
   useEffect(() => {
     AOS.init({
@@ -39,22 +39,21 @@ const Profile = () => {
                   <br />
                   『신입 개발자』 오승원입니다.
                 </div>
-                현재 고려대학교 (세종캠퍼스) 휴학 중이며, 웹앱 개발 및 데이터
-                관리 분야에 주력하고 있습니다. <br />
-                주로{" "}
-                <span style={{ fontWeight: 900 }}>JS, React, C++, Python</span>
+                현재 고려대학교 (세종캠퍼스) 재학 중이며, 데이터 분석 및 백엔드
+                분야에 주력하고 있습니다. <br />
+                주로 <span style={{ fontWeight: 900 }}>JS, C++, Python, R</span>
                 을 활용하고 있습니다.
               </div>
             </div>
             <div className="introduce other" data-aos="fade-up">
               <div style={{ margin: "10px 20px" }}>
                 <i className="fas fa-phone-alt"></i>
-                <span style={{ margin: "20px 20px" }}>010-1234-5678</span>
+                <span style={{ margin: "20px 20px" }}>010-9206-6361</span>
               </div>
               <div style={{ margin: "10px 20px" }}>
                 <i className="fas fa-envelope"></i>
                 <span style={{ margin: "20px 20px" }}>
-                  ********@korea.ac.kr
+                  smartosw@korea.ac.kr
                 </span>
               </div>
               <div
